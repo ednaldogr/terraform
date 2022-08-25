@@ -18,11 +18,6 @@
 
   "provisioners": [
     {
-    "type": "file",
-    "source": "index.nginx-debian.html",
-    "destination": "/tmp/index.nginx-debian.html"
-    },
-    {
     "type": "shell",
     "scripts": [  "scripts/install_nginx.sh"   ],
     "execute_command": "{{ .Vars }} sudo -E sh '{{ .Path }}'",
