@@ -42,10 +42,10 @@ curl <FQDN do ALB>
 A estrutura conta com uma VPC, duas subnets públicas, e duas subnets privadas, distribuídas entre as AZ's (eu-west-1a e eu-west-1b)
 
 - Range de IP atribúido à *VPC*: "10.0.0.0/16"
-- Range de IP atríbuido à *Subnet Pública* em eu-west-1a *(orion-subnet-public-1)*
-- Range de IP atríbuido à *Subnet Privada* em eu-west-1a *(orion-subnet-private-1)*
-- Range de IP atríbuido à *Subnet Pública* em eu-west-1b *(orion-subnet-public-2)*
-- Range de IP atríbuido à *Subnet Privada* em eu-west-1b *(orion-subnet-private-2)*
+- Range de IP atríbuido à *Subnet Pública* em eu-west-1a *(orion-subnet-public-1)*: 10.0.1.0/24
+- Range de IP atríbuido à *Subnet Privada* em eu-west-1a *(orion-subnet-private-1)*: 10.0.4.0/24
+- Range de IP atríbuido à *Subnet Pública* em eu-west-1b *(orion-subnet-public-2)*: 10.0.2.0/24
+- Range de IP atríbuido à *Subnet Privada* em eu-west-1b *(orion-subnet-private-2)*: 10.0.5.0/24
 
 As subnets públicas serão associadas ao Internet Gateway *orion-igw*, e as subnets privadas ao Nat Gateway *orion-natgw*
 
