@@ -24,7 +24,7 @@ resource "aws_launch_configuration" "orion-launchconfig" {
   instance_type   = "t2.micro"
   key_name        = aws_key_pair.mykey.key_name
   security_groups = [aws_security_group.allow-ssh.id, aws_security_group.alb-securitygroup-web.id]
-  user_data       = "#!/bin/bash\nhostname=`hostname -f`\necho 'Hello World!!!'\necho 'O hostname da instancia e: '$hostname > /var/www/html/index.nginx-debian.html" 
+  user_data       = "#!/bin/bash\nhostname=`hostname -f`\necho 'Hello World!!!'\necho 'O hostname da instancia e: '$hostname >> /var/www/html/index.nginx-debian.html" 
   lifecycle {
     create_before_destroy = true
   }
