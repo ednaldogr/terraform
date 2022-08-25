@@ -39,7 +39,7 @@ resource "aws_autoscaling_policy" "orion-cpu-policy-scaledown" {
 }
 
 resource "aws_cloudwatch_metric_alarm" "orion-cpu-alarm-scaledown" {
-  alarm_name          = "example-cpu-alarm-scaledown"
+  alarm_name          = "orion-cpu-alarm-scaledown"
   alarm_description   = "Volta ao uso normal de CPU"
   comparison_operator = "LessThanOrEqualToThreshold"
   evaluation_periods  = "2"

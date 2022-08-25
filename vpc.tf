@@ -10,7 +10,7 @@ resource "aws_vpc" "orion-vpc" {
   }
 }
 
-# Cricando as Subnets Publicas
+# Criando as Subnets Publicas
 resource "aws_subnet" "orion-subnet-public-1" {
   vpc_id                  = aws_vpc.orion-vpc.id
   cidr_block              = "10.0.1.0/24"
@@ -33,7 +33,7 @@ resource "aws_subnet" "orion-subnet-public-2" {
   }
 }
 
-# Cricando as Subnets Privadas
+# Criando as Subnets Privadas
 resource "aws_subnet" "orion-subnet-private-1" {
   vpc_id                  = aws_vpc.orion-vpc.id
   cidr_block              = "10.0.4.0/24"

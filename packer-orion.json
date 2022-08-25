@@ -24,7 +24,7 @@
     },
     {
     "type": "shell",
-    "scripts": [  "scripts/install_software.sh"   ],
+    "scripts": [  "scripts/install_nginx.sh"   ],
     "execute_command": "{{ .Vars }} sudo -E sh '{{ .Path }}'",
     "pause_before": "10s"
     }
