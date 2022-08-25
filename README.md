@@ -8,7 +8,7 @@ Criando Infraestrutura cloud na AWS com Terraform e Packer
 - [ ] [Para baixar o Packer, clique aqui](https://www.packer.io/docs/install)
 
 ### Módulo AWS Versão 4.27.0
-- [ ] [](https://registry.terraform.io/providers/hashicorp/aws/4.27.0)
+- [ ] [Link do Registry correspondente ao módulo utilizado](https://registry.terraform.io/providers/hashicorp/aws/4.27.0)
 
 ## Iniciando
 
